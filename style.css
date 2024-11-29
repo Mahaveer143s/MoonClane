@@ -1,0 +1,68 @@
+* {
+    font-family: 'Nunito Sans', 'Poppins', 'Cormorant', sans-serif;
+}
+h1{
+    color: #3d3d3d;
+}
+ /* Style for the image container */
+ .image-box {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.05); /* Grow on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.image-box:hover img {
+    transform: scale(1.1); /* Slightly zoom the image */
+}
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7; /* Light background color */
+    color: #4a4a4a; /* Slightly darker text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px solid #ddd; /* Bottom border only */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+    color: #000; /* White text on hover */
+    border-bottom-color: #000; /* Change bottom border color on hover */
+}
+
+.custom-button .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: inherit; /* Matches the text color */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Full-screen vertical centering */
+}
+a{
+    text-decoration: none;
+}
+.a-none{
+    text-decoration: none;
+}
