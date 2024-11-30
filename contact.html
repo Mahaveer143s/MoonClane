@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - The Moon Clan</title>
+    <title>The Moon Clan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Cormorant', sans-serif;
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+            font-size: 1.5rem; /* fs-2 */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #333;
+        }
+
+        .navbar-pill {
+            border-radius: 50px;
+        }
+
+        .rounded-5 {
+            border-radius: 20px;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        .narroto {
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-outline-dark {
+            border-color: black;
+            color: black;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .fullscreen-img {
+            width: 100%;
+            height: auto;
         }
         .header-image {
             width: 100%;
@@ -43,21 +91,53 @@
         .btn-send:hover {
             background-color: #333;
         }
+        
     </style>
 </head>
-<body>
+
+<body class="bg-white text-black">
+
+    <!-- Header/Navbar -->
+    <nav class="navbar  navbar-expand-lg navbar-light bg-white sticky-top px-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-5" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link " href="shop.html" style="font-weight: 500;">SHOP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="font-weight: 500;">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="font-weight: 500;">CONTACT US</a></li>
+            </ul>
+            <a class="navbar-brand fw-bold bg-none me-auto" href="#"><img src="img/logo.png"  height="80px" alt="logo"/></a>
+        
+            <div class="d-flex align-items-center">
+                <div class="input-group navbar-pill me-2 rounded-pill border">
+                    <span class="input-group-text bg-white border rounded-pill ">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="form-controls p-2 border-0 rounded-pill" placeholder="Search...">
+                </div>
+                <button class="btn btn-none border-0 bg-0 mx-2"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn btn-none border-0 mx-2"><i class="bi bi-bag"></i></button>
+                <button class="btn btn-none border-0 mx-2"><i class="fa-regular fa-user"></i></button>
+                <button class="btn btn-dark border-0 mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                    <i class="fas fa-bars fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+<body >
     <!-- Header Image -->
-    <header>
-        <img src="path-to-header-image.jpg" alt="Header Image" class="header-image">
+    <header class="container">
+        <img src="img/header-banner-1.jpg" alt="Header Image" class="header-image pt-5 shadow">
     </header>
 
     <!-- Contact Section -->
-    <section class="container py-5">
-        <h2 class="text-center section-heading">Contact Us</h2>
+    <section class="container px-5 py-5" style="color:#333333e2;font-family: 'Nunito Sans','sans-serif';">    
         <div class="row">
             <!-- Left Column -->
             <div class="col-lg-6">
-                <h3 class="section-heading">Our Information</h3>
+                <h3 class="section-heading mb-5">Our Information</h3>
                 <p class="contact-info">
                     Vijayawada (Head Office), Krishna, Andhra Pradesh (AP), India (IN), Pin Code: 520001
                 </p>
@@ -66,12 +146,12 @@
             </div>
             <!-- Right Column -->
             <div class="col-lg-6">
-                <h3 class="section-heading">Say Something...</h3>
+                <h3 class="section-heading mb-5">Say Something...</h3>
                 <form>
-                    <input type="text" class="form-control" placeholder="First Name" required>
-                    <input type="email" class="form-control" placeholder="Email" required>
-                    <input type="tel" class="form-control" placeholder="Phone" required>
-                    <select class="form-control" required>
+                    <input type="text" class="form-control p-2" placeholder="First Name" required>
+                    <input type="email" class="form-control p-2" placeholder="Email" required>
+                    <input type="tel" class="form-control p-2" placeholder="Phone" required>
+                    <select class="form-control p-2" required>
                         <option value="" disabled selected>Reason for Contact</option>
                         <option value="1">General Inquiry</option>
                         <option value="2">Support</option>
@@ -83,13 +163,58 @@
             </div>
         </div>
     </section>
+    <div class="container d-flex justify-content-center">
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-3 text-center">
-        <p>© 2024 The Moon Clan. All Rights Reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    
+        <img src="img/logo.png"  width="90%"/>
+    </div>
+    <hr>
+    
+        <!-- Footer -->
+        <footer class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Join Us on Themoonclan to an effortless glow</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase fs-5 fw-bold">Navigate</h6>
+                        <ul class="list-unstyled " >
+                            <li><a href="#" class="text-dark a-none">Shop</a></li>
+                            <li><a href="#" class="text-dark a-none">About</a></li>
+                            <li><a href="#" class="text-dark a-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase fs-5 fw-bold">Social</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark a-none">Facebook</a></li>
+                            
+                            <li><a href="#" class="text-dark a-none">Youtube</a></li>
+                            
+                            <li><a href="#" class="text-dark a-none">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase fs-5 fw-bold">Get in Touch</h6>
+                        <p>We're here M-F 9am-5pm PST
+                             <br>
+                            drop a note anytime:<br>
+                            
+                            info@themoonclan.in
+                            </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <hr class="my-4">
+            <p class="text-center mb-0">©  Copyright 2024 themoonclan .All Rights Reserved | Privacy Policy | Terms and Conditions | Return and Refund | Shipping Policy</p>
+        </footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+    </html>
+    

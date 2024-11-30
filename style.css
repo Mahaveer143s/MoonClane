@@ -66,3 +66,26 @@ a{
 .a-none{
     text-decoration: none;
 }
+
+.testimonial {
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial-message {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.testimonial-name {
+    font-size: 1rem;
+    color: #000; /* Primary color for the name */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
