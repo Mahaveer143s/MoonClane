@@ -91,7 +91,51 @@
         .btn-send:hover {
             background-color: #333;
         }
-        
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .cart-title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .cart-item {
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+    .cart-item img {
+      max-width: 150px;
+      border-radius: 5px;
+    }
+    .cart-item h1 {
+      font-size: 1.5rem;
+      color: black;
+    }
+    .cart-item .price {
+      font-size: 1rem;
+      color: #333;
+    }
+    .cart-item .product-name {
+      font-size: 0.875rem;
+      color: #777;
+    }
+    .cart-item .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .cart-item .quantity-controls input {
+      text-align: center;
+      width: 50px;
+    }
+    .cart-item .wishlist, .cart-item .share {
+      margin-top: 10px;
+      font-size: 0.875rem;
+    }
     </style>
 </head>
 
@@ -127,48 +171,38 @@
         </div>
     </nav>
 <body >
-    <!-- Header Image -->
-    <header class="container">
-        <img src="img/header-banner-1.jpg" alt="Header Image" class="header-image pt-5 shadow">
-    </header>
-
-    <!-- Contact Section -->
-    <section class="container px-5 py-5" style="color:#333333e2;font-family: 'Nunito Sans','sans-serif';">    
-        <div class="row">
-            <!-- Left Column -->
-            <div class="col-lg-6">
-                <h3 class="section-heading mb-5">Our Information</h3>
-                <p class="contact-info">
-                    Vijayawada (Head Office), Krishna, Andhra Pradesh (AP), India (IN), Pin Code: 520001
-                </p>
-                <p class="contact-info">+91 987654321</p>
-                <p class="contact-info">info@themoonclan.in</p>
+    <section class="py-5">
+        <div class="container my-5">
+            <!-- Cart Item -->
+            <div class="row cart-item">
+              <div class="col-md-3">
+                <img src="img/product-1.png" alt="Product Image">
+              </div>
+              <div class="col-md-9">
+                <h1>Neo Nude Foundation</h1>
+                <p class="price">₹4,999.00</p>
+                <p class="product-name">Neo Nude Foundation</p>
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                  <!-- Quantity Controls -->
+                  <div class="quantity-controls">
+                    <button class="btn btn-outline-secondary">-</button>
+                    <input type="number" value="1" class="form-control">
+                    <button class="btn btn-outline-secondary">+</button>
+                  </div>
+                  <button class="btn btn-primary">Add to Cart</button>
+                </div>
+                <div class="wishlist mt-3">
+                  <i class="bi bi-heart"></i> Add to Wishlist
+                </div>
+                <div class="share mt-2">
+                  <span>Share: </span>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+              </div>
             </div>
-            <!-- Right Column -->
-            <div class="col-lg-6">
-                <h3 class="section-heading mb-5">Say Something...</h3>
-                <form>
-                    <input type="text" class="form-control p-2" placeholder="First Name" required>
-                    <input type="email" class="form-control p-2" placeholder="Email" required>
-                    <input type="tel" class="form-control p-2" placeholder="Phone" required>
-                    <select class="form-control p-2" required>
-                        <option value="" disabled selected>Reason for Contact</option>
-                        <option value="1">General Inquiry</option>
-                        <option value="2">Support</option>
-                        <option value="3">Feedback</option>
-                    </select>
-                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-send mt-3">Send Message</button>
-                </form>
-            </div>
-        </div>
     </section>
-    <div class="container d-flex justify-content-center">
-
-    
-        <img src="img/logo.png"  width="90%"/>
-    </div>
-    <hr>
     
         <!-- Footer -->
         <footer class="py-5">
